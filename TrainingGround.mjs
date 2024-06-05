@@ -54,10 +54,5 @@ export default class TraininGround{
             }
         }    
     }
-
-    
-        
-
-        
     
 }
