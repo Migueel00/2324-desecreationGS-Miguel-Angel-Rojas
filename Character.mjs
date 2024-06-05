@@ -2,11 +2,18 @@
 
 export default class Character{
 
-    constructor() {
-        
+    constructor(name, intelligence, strength, durability, speed, power, combat) {
+        this.name           = name;
+        this.intelligence   = intelligence;
+        this.strength       = strength;
+        this.durability     = durability;
+        this.speed          = speed;
+        this.power          = power;
+        this.combat         = combat;
+
     }
 
     attack(){
-        
+
     }
 }
