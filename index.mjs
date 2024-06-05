@@ -10,8 +10,8 @@ const trainingGround = new TraininGround(data);
 const SuperHero = trainingGround.createSuperHero();
 const villain   = trainingGround.createVillain();
 
-console.log("heroe: " + SuperHero.name);
-console.log("villano: " + villain.name);
+console.log("heroe: " + SuperHero.hp);
+console.log("villano: " + villain.hp);
 
 const Die3      = DieFactory.createDie(DieID.D3);
 const Die5      = DieFactory.createDie(DieID.D5);

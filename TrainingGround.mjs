@@ -21,7 +21,12 @@ export default class TraininGround{
                 const combat        = this.data[random].powerstats.combat;
                 const power         = this.data[random].powerstats.power;
         
-                return new SuperHero(name, intelligence, strength, durability, speed, power, combat);
+                let hp            = strength * 10;
+                if(hp > 666){
+                    hp = 666;
+                }
+
+                return new SuperHero(name, hp, intelligence, strength, durability, speed, power, combat);
                 
             }
         }
@@ -39,7 +44,13 @@ export default class TraininGround{
                 const combat        = this.data[i].powerstats.combat;
                 const power         = this.data[i].powerstats.power;
 
-                return new Villain(name, intelligence, strength, durability, speed, power, combat);
+                let hp            = strength * 10;
+                
+                if(hp > 666){
+                    hp = 666;
+                }
+
+                return new Villain(name, hp, intelligence, strength, durability, speed, power, combat);
             }
         }    
     }
